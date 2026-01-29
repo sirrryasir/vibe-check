@@ -92,9 +92,12 @@ export default function Scanner() {
                                 </div>
                                 <input
                                     type="url"
-                                    placeholder="https://"
+                                    placeholder="https://example.com"
                                     value={url}
                                     onChange={(e) => setUrl(e.target.value)}
+                                    onFocus={() => {
+                                        if (!url) setUrl("https://");
+                                    }}
                                     className="w-full h-14 pl-14 pr-32 sm:pr-40 rounded-xl bg-zinc-100 dark:bg-zinc-900/50 border border-zinc-200 dark:border-white/5 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent/50 text-lg text-zinc-900 dark:text-white placeholder-zinc-500 dark:placeholder-zinc-600 font-mono transition-all"
                                     required
                                 />

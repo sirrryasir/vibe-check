@@ -41,16 +41,16 @@ export default function Header() {
                         SCANNER
                     </Link>
                     <Link
-                        href="#algorithm"
-                        className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors"
-                    >
-                        ALGORITHM
-                    </Link>
-                    <Link
                         href="#live-scan"
                         className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors"
                     >
                         LIVE SCAN
+                    </Link>
+                    <Link
+                        href="#algorithm"
+                        className="text-sm font-medium text-gray-600 hover:text-foreground transition-colors"
+                    >
+                        ALGORITHM
                     </Link>
                 </nav>
 

@@ -12,15 +12,8 @@ export default function Footer() {
                     </span>
                 </div>
 
-                <div className="flex justify-center gap-6 mb-8 text-gray-400">
-                    {/* Social Placeholders */}
-                    <a href="#" className="hover:text-foreground transition-colors"><div className="w-5 h-5 bg-current rounded-sm opacity-50"></div></a>
-                    <a href="#" className="hover:text-foreground transition-colors"><div className="w-5 h-5 bg-current rounded-sm opacity-50"></div></a>
-                    <a href="#" className="hover:text-foreground transition-colors"><div className="w-5 h-5 bg-current rounded-sm opacity-50"></div></a>
-                </div>
-
                 <p className="text-xs text-gray-400">
-                    © {new Date().getFullYear()} VibeCheck. Not affiliated with Bashi Academy.
+                    © {new Date().getFullYear()} VibeCheck.
                 </p>
             </div>
         </footer>
