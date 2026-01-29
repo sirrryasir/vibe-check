@@ -7,32 +7,32 @@ body {
 }
 
 :root {
-  /* Light Mode Defaults - Clean & Crisp */
-  --background: #fafafa;
-  /* Slightly warmer/softer white */
-  --foreground: #09090b;
-  /* Zinc 950 */
+  /* Light Mode - Clean & Crisp */
+  --background: #ffffff;
+  --foreground: #020617;
+  /* Slate 950 */
   --accent: #F5D90A;
   /* Yellow */
-  --card: #f4f4f5;
-  /* Zinc 100 */
-  --card-foreground: #09090b;
-  --border: #e4e4e7;
-  /* Zinc 200 */
+  --card: #f8fafc;
+  /* Slate 50 */
+  --card-foreground: #020617;
+  --border: #e2e8f0;
+  /* Slate 200 */
 }
 
 .dark {
-  /* Dark Mode Defaults - Deep & Premium */
-  --background: #000000;
-  /* True Black */
-  --foreground: #ffffff;
-  --accent: #F5D90A;
-  /* Keep Yellow bright */
-  --card: #09090b;
-  /* Zinc 950 */
-  --card-foreground: #ffffff;
-  --border: #27272a;
-  /* Zinc 800 */
+  /* Dark Mode - Deep & Premium (Midnight Blue/Black) */
+  --background: #020617;
+  /* Slate 950 - The "Rich Dark" Look */
+  --foreground: #f8fafc;
+  /* Slate 50 */
+  --accent: #FDE047;
+  /* Slightly brighter yellow for dark mode contrast */
+  --card: #0f172a;
+  /* Slate 900 */
+  --card-foreground: #f8fafc;
+  --border: #1e293b;
+  /* Slate 800 */
 }
 
 @theme inline {

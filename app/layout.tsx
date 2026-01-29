@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/theme-provider";
+import BackgroundGrid from "@/components/BackgroundGrid";
 
 export default function RootLayout({
   children,
@@ -26,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground transition-colors duration-300 min-h-screen flex flex-col`}
       >
         <ThemeProvider
           attribute="class"
@@ -36,8 +37,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <BackgroundGrid />
           <Header />
-          {children}
+          <main className="flex-grow">{children}</main>
         </ThemeProvider>
       </body>
     </html>
